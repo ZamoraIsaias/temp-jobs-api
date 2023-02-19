@@ -16,7 +16,7 @@ const JobsRouter = require("./routes/jobs")
 const helmet = require('helmet');
 const cors = require('cors');
 const xss =  require('xss-clean');
-const rateLimiter = require('rate-limiter');
+const rateLimiter = require('express-rate-limit');
 
 // error handler
 const notFoundMiddleware = require('./middleware/not-found');
